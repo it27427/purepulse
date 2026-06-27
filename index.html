@@ -1,0 +1,3674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== SEO META TAGS ===== -->
+    <title>
+      Pure Pulse - Wellness Reviews & Health Insights for Mind & Body
+    </title>
+    <meta
+      name="description"
+      content="Pure Pulse delivers honest wellness reviews, health insights, and evidence-based guides for Mental Health, Sleep, Bodybuilding, Weight Loss, and more."
+    />
+    <meta
+      name="keywords"
+      content="wellness reviews, health insights, mental health, sleep optimization, bodybuilding, weight loss, men's health, women's health, sexual health, nutrition"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://purepulse365.blogspot.com/" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Pure Pulse - Wellness Reviews & Health Insights"
+    />
+    <meta
+      property="og:description"
+      content="Evidence-based wellness reviews and health insights for every beat of life."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://purepulse365.blogspot.com/" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Google+Sans:wght@400;500;700&family=Orbitron:wght@400;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@400;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <style>
+      /* ============================================================ */
+      /* ===== UTILITY CLASSES (Tailwind-like) ===== */
+      /* ============================================================ */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .gap-2 {
+        gap: 8px;
+      }
+      .gap-3 {
+        gap: 12px;
+      }
+      .gap-4 {
+        gap: 16px;
+      }
+      .gap-6 {
+        gap: 24px;
+      }
+      .gap-8 {
+        gap: 32px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .text-white {
+        color: #fff;
+      }
+      .text-gray {
+        color: #8e9398;
+      }
+      .text-light {
+        color: #d9d9d9;
+      }
+      .text-teal {
+        color: #4edfd8;
+      }
+      .text-sm {
+        font-size: 14px;
+      }
+      .text-base {
+        font-size: 16px;
+      }
+      .text-lg {
+        font-size: 18px;
+      }
+      .text-xl {
+        font-size: 22px;
+      }
+      .text-2xl {
+        font-size: 28px;
+      }
+      .text-3xl {
+        font-size: 34px;
+      }
+      .text-4xl {
+        font-size: 42px;
+      }
+
+      .font-heading {
+        font-family: "Playfair Display", serif;
+      }
+      .font-body {
+        font-family: "Google Sans", "Segoe UI", sans-serif;
+      }
+      .font-btn {
+        font-family: "Orbitron", monospace;
+      }
+      .font-link {
+        font-family: "Mulish", sans-serif;
+      }
+      .font-caveat {
+        font-family: "Caveat", cursive;
+      }
+      .font-dancing {
+        font-family: "Dancing Script", cursive;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .mt-2 {
+        margin-top: 8px;
+      }
+      .mt-4 {
+        margin-top: 16px;
+      }
+      .mt-6 {
+        margin-top: 24px;
+      }
+      .mt-8 {
+        margin-top: 32px;
+      }
+      .mt-12 {
+        margin-top: 48px;
+      }
+      .mb-2 {
+        margin-bottom: 8px;
+      }
+      .mb-4 {
+        margin-bottom: 16px;
+      }
+      .mb-6 {
+        margin-bottom: 24px;
+      }
+      .mb-8 {
+        margin-bottom: 32px;
+      }
+
+      .p-4 {
+        padding: 16px;
+      }
+      .p-6 {
+        padding: 24px;
+      }
+      .p-8 {
+        padding: 32px;
+      }
+
+      .rounded {
+        border-radius: 12px;
+      }
+      .rounded-full {
+        border-radius: 50%;
+      }
+      .rounded-xl {
+        border-radius: 16px;
+      }
+
+      .bg-dark {
+        background: #0a151d;
+      }
+      .bg-card {
+        background: #0a111b;
+      }
+      .bg-secondary {
+        background: #0a111b;
+      }
+      .bg-teal {
+        background: #4edfd8;
+      }
+
+      .border {
+        border: 1px solid rgba(78, 223, 216, 0.12);
+      }
+      .border-teal {
+        border-color: #4edfd8;
+      }
+
+      .shadow {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+      .shadow-hover {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+
+      .w-full {
+        width: 100%;
+      }
+      .max-w-lg {
+        max-width: 512px;
+      }
+      .max-w-xl {
+        max-width: 640px;
+      }
+      .max-w-2xl {
+        max-width: 768px;
+      }
+
+      /* ============================================================ */
+      /* ===== CSS VARIABLES ===== */
+      /* ============================================================ */
+      :root {
+        --primary: #0a151d;
+        --secondary: #0a111b;
+        --card-bg: #0a111b;
+        --accent: #4edfd8;
+        --accent-light: #8ef7f0;
+        --aqua: #5fd7d2;
+        --dark-teal: #294c4e;
+        --white: #ffffff;
+        --light-gray: #d9d9d9;
+        --medium-gray: #8e9398;
+        --charcoal: #0a151d;
+        --deep-navy: #0a111b;
+        --almost-black: #050e17;
+        --glass-bg: rgba(10, 17, 27, 0.85);
+        --glass-border: rgba(78, 223, 216, 0.08);
+        --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        --radius: 16px;
+        --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        --font-heading: "Playfair Display", serif;
+        --font-body: "Google Sans", "Segoe UI", sans-serif;
+        --font-btn: "Orbitron", monospace;
+        --font-link: "Mulish", sans-serif;
+        --font-caveat: "Caveat", cursive;
+        --font-dancing: "Dancing Script", cursive;
+      }
+
+      /* ============================================================ */
+      /* ===== RESET ===== */
+      /* ============================================================ */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--primary);
+        color: #ffffff;
+        overflow-x: hidden;
+        line-height: 1.7;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-family: var(--font-link);
+        transition: all var(--transition);
+      }
+
+      a:hover {
+        color: var(--accent);
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* ============================================================ */
+      /* ===== PRELOADER ===== */
+      /* ============================================================ */
+      #preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background: var(--primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition:
+          opacity 0.8s ease,
+          visibility 0.8s ease;
+      }
+
+      #preloader.hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .loader-ring {
+        width: 72px;
+        height: 72px;
+        border: 3px solid rgba(78, 223, 216, 0.12);
+        border-top-color: #4edfd8;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      .loader-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: var(--secondary);
+        border: 2px solid #4edfd8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+
+      .loader-logo img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* ============================================================ */
+      /* ===== SCROLLBAR ===== */
+      /* ============================================================ */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--primary);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4edfd8;
+        border-radius: 4px;
+      }
+
+      /* ============================================================ */
+      /* ===== HEADER ===== */
+      /* ============================================================ */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9990;
+        padding: 10px 0;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transform: translateY(-100%);
+        opacity: 0;
+        background: var(--glass-bg);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--glass-border);
+        box-shadow: var(--shadow);
+      }
+
+      .header.visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .header-logo .logo-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #4edfd8;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0a151d;
+        flex-shrink: 0;
+      }
+
+      .header-logo .logo-circle img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+
+      .header-logo .logo-text {
+        font-family: var(--font-heading);
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .header-logo .logo-text span {
+        color: #4edfd8;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-family: var(--font-link);
+        font-size: 14px;
+        font-weight: 500;
+        color: #d9d9d9;
+        position: relative;
+        transition: color var(--transition);
+        padding: 4px 0;
+      }
+
+      /* Glowing border effect on header hover */
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #4edfd8;
+        box-shadow:
+          0 0 12px #4edfd8,
+          0 0 24px rgba(78, 223, 216, 0.3);
+        transition: width var(--transition);
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .header-cta {
+        padding: 8px 24px;
+        border-radius: 50px;
+        background: #4edfd8;
+        color: #0a151d !important;
+        font-family: var(--font-btn);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border: none;
+        cursor: pointer;
+        transition: all var(--transition);
+      }
+
+      .header-cta:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(78, 223, 216, 0.2);
+        color: #0a151d !important;
+      }
+
+      .header-cta::after {
+        display: none !important;
+      }
+
+      /* ===== HAMBURGER ===== */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 4px;
+        z-index: 9999;
+        background: transparent;
+        border: none;
+      }
+
+      .hamburger span {
+        display: block;
+        width: 28px;
+        height: 2.5px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all 0.35s ease;
+        transform-origin: center;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      /* ===== OFFCANVAS ===== */
+      .offcanvas {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 300px;
+        height: 100vh;
+        background: var(--glass-bg);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-left: 1px solid var(--glass-border);
+        z-index: 9998;
+        padding: 80px 32px 32px;
+        transition: right 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .offcanvas.open {
+        right: 0;
+      }
+
+      .offcanvas-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 9997;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .offcanvas-overlay.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .offcanvas a {
+        font-family: var(--font-link);
+        font-size: 18px;
+        color: #d9d9d9;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--glass-border);
+        transition:
+          color var(--transition),
+          padding-left var(--transition);
+      }
+
+      .offcanvas a:hover {
+        color: #4edfd8;
+        padding-left: 12px;
+      }
+
+      /* ============================================================ */
+      /* ===== BACK TO TOP ===== */
+      /* ============================================================ */
+      .back-to-top {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        z-index: 9995;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: #4edfd8;
+        color: #0a151d;
+        border: none;
+        font-size: 22px;
+        cursor: pointer;
+        box-shadow: 0 4px 24px rgba(78, 223, 216, 0.35);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.8);
+        transition: all 0.35s ease;
+        font-family: var(--font-btn);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+
+      .back-to-top:hover {
+        transform: scale(1.08);
+        box-shadow: 0 4px 32px rgba(78, 223, 216, 0.55);
+      }
+
+      /* ============================================================ */
+      /* ===== SECTIONS ===== */
+      /* ============================================================ */
+      section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        font-family: var(--font-heading);
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+        color: #fff;
+      }
+
+      .section-title .highlight {
+        color: #4edfd8;
+      }
+
+      .title-underline {
+        width: 120px;
+        height: 4px;
+        background: #4edfd8;
+        margin: 0 auto 48px;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .title-underline::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, #8ef7f0, transparent);
+        animation: underline-sweep 2.8s ease-in-out infinite;
+      }
+
+      @keyframes underline-sweep {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .section-sub {
+        text-align: center;
+        color: #8e9398;
+        max-width: 620px;
+        margin: 0 auto 56px;
+        font-size: 17px;
+      }
+
+      /* ============================================================ */
+      /* ===== BUTTONS ===== */
+      /* ============================================================ */
+      .btn {
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 50px;
+        font-family: var(--font-btn);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: all var(--transition);
+        background: transparent;
+        color: #fff;
+        border: 1.5px solid #4edfd8;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-primary {
+        background: #4edfd8;
+        color: #0a151d;
+        border-color: #4edfd8;
+      }
+
+      .btn-primary:hover {
+        background: transparent;
+        color: #4edfd8;
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(78, 223, 216, 0.12);
+      }
+
+      .btn-outline:hover {
+        background: #4edfd8;
+        color: #0a151d;
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(78, 223, 216, 0.12);
+      }
+
+      .btn-sm {
+        padding: 8px 20px;
+        font-size: 11px;
+      }
+
+      /* ============================================================ */
+      /* ===== CARDS - 4/3/2/1 RESPONSIVE GRID ===== */
+      /* ============================================================ */
+      .card-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      /* ===== CARD BASE ===== */
+      .card-base {
+        background: #0a111b;
+        border-radius: var(--radius);
+        padding: 24px 20px;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        transition: all var(--transition);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transform: translateY(40px);
+        /* No background glow on hover */
+      }
+
+      .card-base.reveal {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Glowing border ONLY on hover - with animation */
+      .card-base::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          135deg,
+          transparent 30%,
+          #4edfd8,
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+        pointer-events: none;
+        background-size: 200% 200%;
+      }
+
+      .card-base:hover::before {
+        opacity: 1;
+        animation: border-glow 1.2s ease-in-out infinite alternate;
+      }
+
+      @keyframes border-glow {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+      }
+
+      .card-base > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .card-base:hover {
+        transform: translateY(-6px) scale(1.01);
+        border-color: #4edfd8;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+
+      /* ===== CARD IMAGE ===== */
+      .card-base .card-image {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        background: #0a151d;
+        position: relative;
+      }
+
+      .card-base .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition:
+          transform 0.6s ease,
+          filter 0.6s ease;
+        filter: grayscale(0.15);
+      }
+
+      .card-base:hover .card-image img {
+        transform: scale(1.06);
+        filter: grayscale(0) brightness(1.05);
+      }
+
+      /* ===== BADGE ===== */
+      .card-base .card-badge {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 4px 14px;
+        border-radius: 50px;
+        font-family: var(--font-btn);
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .badge-gold {
+        background: #fbbf24;
+        color: #0a151d;
+      }
+      .badge-rose {
+        background: #f472b6;
+        color: #0a151d;
+      }
+      .badge-mint {
+        background: #34d399;
+        color: #0a151d;
+      }
+      .badge-lavender {
+        background: #a78bfa;
+        color: #0a151d;
+      }
+      .badge-coral {
+        background: #fb7185;
+        color: #0a151d;
+      }
+      .badge-amber {
+        background: #f59e0b;
+        color: #0a151d;
+      }
+      .badge-cyan {
+        background: #22d3ee;
+        color: #0a151d;
+      }
+      .badge-purple {
+        background: #c084fc;
+        color: #0a151d;
+      }
+
+      .card-base .card-category {
+        display: inline-block;
+        font-family: var(--font-caveat);
+        font-size: 14px;
+        color: #4edfd8;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .card-base h3 {
+        font-family: var(--font-heading);
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #fff;
+      }
+
+      .card-base p {
+        color: #8e9398;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+
+      .card-base .card-price {
+        font-family: var(--font-btn);
+        font-size: 18px;
+        color: #4edfd8;
+        font-weight: 700;
+      }
+
+      .card-base .card-price .old {
+        font-size: 14px;
+        color: #fb7185;
+        text-decoration: line-through;
+        font-weight: 400;
+        margin-left: 8px;
+      }
+
+      .card-base .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(78, 223, 216, 0.06);
+      }
+
+      .card-base .view-more {
+        font-family: var(--font-link);
+        font-size: 14px;
+        font-weight: 600;
+        color: #4edfd8;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all var(--transition);
+      }
+
+      .card-base .view-more:hover {
+        gap: 14px;
+        color: #8ef7f0;
+      }
+
+      .card-base .view-more::after {
+        content: "→";
+        transition: transform var(--transition);
+      }
+
+      .card-base .view-more:hover::after {
+        transform: translateX(6px);
+      }
+
+      /* ============================================================ */
+      /* ===== CATEGORY CARDS (3D effect) ===== */
+      /* ============================================================ */
+      .cat-card {
+        background: #0a111b;
+        border-radius: var(--radius);
+        padding: 32px 20px;
+        text-align: center;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        transition: all var(--transition);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 800px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        /* No background glow */
+      }
+
+      .cat-card::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          135deg,
+          transparent 30%,
+          #4edfd8,
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+        pointer-events: none;
+        background-size: 200% 200%;
+      }
+
+      .cat-card:hover::before {
+        opacity: 1;
+        animation: border-glow 1.2s ease-in-out infinite alternate;
+      }
+
+      .cat-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .cat-card:hover {
+        transform: translateY(-8px) scale(1.03) rotateX(2deg);
+        border-color: #4edfd8;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+
+      .cat-card .cat-icon {
+        font-size: 48px;
+        display: block;
+        margin-bottom: 12px;
+        transition: transform 0.5s ease;
+      }
+
+      .cat-card:hover .cat-icon {
+        transform: scale(1.1) rotate(-4deg);
+      }
+
+      .cat-card h4 {
+        font-family: var(--font-heading);
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+
+      .cat-card p {
+        color: #8e9398;
+        font-size: 13px;
+      }
+
+      /* ============================================================ */
+      /* ===== CATEGORY GRID ===== */
+      /* ============================================================ */
+      .category-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      /* ============================================================ */
+      /* ===== PROMISE BADGES ===== */
+      /* ============================================================ */
+      .promise-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .promise-item {
+        background: #0a111b;
+        border-radius: var(--radius);
+        padding: 28px 20px;
+        text-align: center;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        transition: all var(--transition);
+      }
+
+      .promise-item:hover {
+        border-color: #4edfd8;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
+
+      .promise-item .icon {
+        font-size: 40px;
+        display: block;
+        margin-bottom: 8px;
+        transition: transform 0.5s ease;
+      }
+
+      .promise-item:hover .icon {
+        transform: scale(1.1) rotate(-4deg);
+      }
+
+      .promise-item h4 {
+        font-family: var(--font-heading);
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .promise-item p {
+        color: #8e9398;
+        font-size: 13px;
+      }
+
+      /* ============================================================ */
+      /* ===== DEALS ===== */
+      /* ============================================================ */
+      .deals-section {
+        background: #0a111b;
+        border-radius: var(--radius);
+        padding: 48px;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .deals-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .deals-text h2 {
+        font-family: var(--font-heading);
+        font-size: 36px;
+        color: #fff;
+      }
+
+      .deals-text h2 span {
+        color: #4edfd8;
+      }
+
+      .deals-text p {
+        color: #8e9398;
+        font-size: 16px;
+      }
+
+      .timer {
+        display: flex;
+        gap: 16px;
+        font-family: var(--font-btn);
+      }
+
+      .timer-block {
+        background: #0a151d;
+        padding: 12px 20px;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        min-width: 72px;
+      }
+
+      .timer-block .num {
+        font-size: 32px;
+        font-weight: 700;
+        color: #4edfd8;
+        display: block;
+      }
+
+      .timer-block .label {
+        font-size: 11px;
+        color: #8e9398;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* ============================================================ */
+      /* ===== OFFER CARD ===== */
+      /* ============================================================ */
+      .offer-card {
+        background: linear-gradient(135deg, #0a111b, #0a151d);
+        border-radius: var(--radius);
+        padding: 48px;
+        border: 1px solid #4edfd8;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 60px rgba(78, 223, 216, 0.04);
+      }
+
+      .offer-card h2 {
+        font-family: var(--font-heading);
+        font-size: 38px;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+
+      .offer-card h2 span {
+        color: #4edfd8;
+      }
+
+      .offer-card p {
+        color: #8e9398;
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+
+      .offer-card .btn {
+        font-size: 16px;
+        padding: 16px 48px;
+      }
+
+      /* ============================================================ */
+      /* ===== READER FAVORITES ===== */
+      /* ============================================================ */
+      .favorites-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .fav-item {
+        background: #0a111b;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid rgba(78, 223, 216, 0.08);
+        transition: all var(--transition);
+      }
+
+      .fav-item:hover {
+        border-color: #4edfd8;
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
+
+      .fav-item .fav-img {
+        height: 180px;
+        background: #0a151d;
+        overflow: hidden;
+      }
+
+      .fav-item .fav-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition:
+          transform 0.6s ease,
+          filter 0.6s ease;
+        filter: grayscale(0.1);
+      }
+
+      .fav-item:hover .fav-img img {
+        transform: scale(1.06);
+        filter: grayscale(0) brightness(1.05);
+      }
+
+      .fav-item .fav-body {
+        padding: 16px 20px 20px;
+      }
+
+      .fav-item .fav-body h4 {
+        font-family: var(--font-heading);
+        font-size: 17px;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+
+      .fav-item .fav-body p {
+        color: #8e9398;
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+
+      .fav-item .fav-body .fav-meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+        color: #8e9398;
+      }
+
+      /* ============================================================ */
+      /* ===== MISSIONARY CARDS (Community Says - Glassmorphism) ===== */
+      /* ============================================================ */
+      .community-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .community-card {
+        background: rgba(10, 17, 27, 0.6);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-radius: var(--radius);
+        padding: 32px 24px;
+        border: 1px solid rgba(78, 223, 216, 0.06);
+        transition: all var(--transition);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .community-card::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          135deg,
+          transparent 30%,
+          #4edfd8,
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+        pointer-events: none;
+        background-size: 200% 200%;
+      }
+
+      .community-card:hover::before {
+        opacity: 1;
+        animation: border-glow 1.2s ease-in-out infinite alternate;
+      }
+
+      .community-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .community-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        border-color: #4edfd8;
+        box-shadow: 0 12px 48px rgba(78, 223, 216, 0.06);
+      }
+
+      .community-card .icon {
+        font-size: 48px;
+        display: block;
+        margin-bottom: 12px;
+        transition: transform 0.5s ease;
+      }
+
+      .community-card:hover .icon {
+        transform: scale(1.1) rotate(-4deg);
+      }
+
+      .community-card h4 {
+        font-family: var(--font-heading);
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+
+      .community-card p {
+        color: #d9d9d9;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .community-card .author {
+        font-family: var(--font-caveat);
+        font-size: 18px;
+        color: #4edfd8;
+        margin-top: 12px;
+        display: block;
+      }
+
+      /* ============================================================ */
+      /* ===== MARQUEE ===== */
+      /* ============================================================ */
+      .marquee-section {
+        overflow: hidden;
+        padding: 32px 0;
+        background: #0a111b;
+        border-top: 1px solid rgba(78, 223, 216, 0.06);
+        border-bottom: 1px solid rgba(78, 223, 216, 0.06);
+      }
+
+      .marquee-track {
+        display: flex;
+        gap: 40px;
+        animation: marquee-scroll 40s linear infinite;
+        width: max-content;
+      }
+
+      .marquee-track .mini-card {
+        flex: 0 0 auto;
+        background: #0a151d;
+        border: 1px solid rgba(78, 223, 216, 0.06);
+        border-radius: 12px;
+        padding: 12px 28px;
+        text-align: center;
+        font-family: var(--font-body);
+        color: #d9d9d9;
+        transition: all var(--transition);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .marquee-track .mini-card:hover {
+        border-color: #4edfd8;
+        color: #fff;
+        transform: scale(1.04) rotate(-1deg);
+      }
+
+      @keyframes marquee-scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* ============================================================ */
+      /* ===== AD BOX ===== */
+      /* ============================================================ */
+      .ad-box {
+        background: #0a111b;
+        border: 1px dashed rgba(78, 223, 216, 0.12);
+        border-radius: var(--radius);
+        padding: 32px;
+        text-align: center;
+        color: #8e9398;
+        font-size: 14px;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        transition: border-color var(--transition);
+      }
+
+      .ad-box:hover {
+        border-color: #4edfd8;
+      }
+
+      .ad-box .ad-label {
+        font-family: var(--font-btn);
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #8e9398;
+      }
+
+      /* ============================================================ */
+      /* ===== TWO COLUMN ===== */
+      /* ============================================================ */
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: stretch;
+      }
+
+      .two-col .col {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      /* ============================================================ */
+      /* ===== MISSIONARY SECTION ===== */
+      /* ============================================================ */
+      .missionary-section {
+        background: #0a111b;
+        border-radius: var(--radius);
+        padding: 60px 48px;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        border: 1px solid rgba(78, 223, 216, 0.06);
+      }
+
+      .missionary-section .text {
+        flex: 1;
+      }
+
+      .missionary-section .text h2 {
+        font-family: var(--font-heading);
+        font-size: 36px;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+
+      .missionary-section .text p {
+        color: #d9d9d9;
+        font-size: 16px;
+      }
+
+      .missionary-section .image {
+        flex: 1;
+        border-radius: var(--radius);
+        overflow: hidden;
+        min-height: 260px;
+        background: #0a151d;
+        border: 1px solid rgba(78, 223, 216, 0.06);
+      }
+
+      .missionary-section .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition:
+          transform 0.6s ease,
+          filter 0.6s ease;
+        filter: grayscale(0.1);
+      }
+
+      .missionary-section .image:hover img {
+        transform: scale(1.04);
+        filter: grayscale(0);
+      }
+
+      /* ============================================================ */
+      /* ===== SOCIAL ICONS WITH TOOLTIPS ===== */
+      /* ============================================================ */
+      .social-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      .social-link {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid rgba(78, 223, 216, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #d9d9d9;
+        transition: all var(--transition);
+        background: #0a151d;
+        cursor: pointer;
+      }
+
+      .social-link i {
+        transition: transform 0.4s ease;
+      }
+
+      .social-link:hover {
+        border-color: #4edfd8;
+        color: #4edfd8;
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 6px 24px rgba(78, 223, 216, 0.08);
+      }
+
+      .social-link:hover i {
+        transform: scale(1.15) rotate(-4deg);
+      }
+
+      /* Tooltip */
+      .social-link::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        background: #0a111b;
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-family: var(--font-body);
+        white-space: nowrap;
+        border: 1px solid rgba(78, 223, 216, 0.06);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        pointer-events: none;
+      }
+
+      .social-link::before {
+        content: "";
+        position: absolute;
+        bottom: calc(100% + 4px);
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        border: 6px solid transparent;
+        border-top-color: #0a111b;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        pointer-events: none;
+      }
+
+      .social-link:hover::after,
+      .social-link:hover::before {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) scale(1);
+      }
+
+      .social-link:hover::before {
+        transform: translateX(-50%) scale(1);
+      }
+
+      /* ============================================================ */
+      /* ===== FOOTER ===== */
+      /* ============================================================ */
+      .footer {
+        background: #0a111b;
+        border-top: 1px solid rgba(78, 223, 216, 0.06);
+        padding: 60px 0 32px;
+        margin-top: 40px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 48px;
+        margin-bottom: 48px;
+      }
+
+      .footer-brand .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .footer-brand .footer-logo .logo-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #4edfd8;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0a151d;
+        flex-shrink: 0;
+      }
+
+      .footer-brand .footer-logo .logo-circle img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+
+      .footer-brand .footer-logo .logo-text {
+        font-family: var(--font-heading);
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .footer-brand .footer-logo .logo-text span {
+        color: #4edfd8;
+      }
+
+      .footer-brand p {
+        color: #8e9398;
+        font-size: 15px;
+        max-width: 300px;
+      }
+
+      .footer h4 {
+        font-family: var(--font-heading);
+        font-size: 18px;
+        margin-bottom: 18px;
+        color: #fff;
+      }
+
+      .footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer ul a {
+        color: #8e9398;
+        font-size: 14px;
+        transition:
+          color var(--transition),
+          padding-left var(--transition);
+      }
+
+      .footer ul a:hover {
+        color: #4edfd8;
+        padding-left: 6px;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(78, 223, 216, 0.06);
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        color: #8e9398;
+        font-size: 14px;
+      }
+
+      .footer-bottom .legal a {
+        color: #8e9398;
+        margin-left: 20px;
+        font-size: 13px;
+      }
+
+      .footer-bottom .legal a:hover {
+        color: #4edfd8;
+      }
+
+      /* ============================================================ */
+      /* ===== RESPONSIVE ===== */
+      /* ============================================================ */
+
+      /* --- Desktop: 4 columns (default) --- */
+      /* --- Tablet: 3 columns --- */
+      @media (max-width: 1024px) {
+        .card-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .category-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .community-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .favorites-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .promise-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+        .missionary-section {
+          flex-direction: column;
+          padding: 40px 28px;
+          text-align: center;
+        }
+        .deals-content {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      /* --- Mobile: 2 columns --- */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+
+        .card-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .community-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .favorites-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .promise-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .section-title {
+          font-size: 30px;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer-bottom .legal a {
+          margin: 0 10px;
+        }
+        .offcanvas {
+          width: 280px;
+          right: -300px;
+          padding: 72px 24px 24px;
+        }
+        .missionary-section {
+          padding: 28px 16px;
+        }
+        .missionary-section .text h2 {
+          font-size: 26px;
+        }
+        .back-to-top {
+          bottom: 20px;
+          right: 20px;
+          width: 44px;
+          height: 44px;
+          font-size: 18px;
+        }
+        .deals-section {
+          padding: 28px 20px;
+        }
+        .deals-text h2 {
+          font-size: 26px;
+        }
+        .timer-block {
+          min-width: 56px;
+          padding: 8px 12px;
+        }
+        .timer-block .num {
+          font-size: 22px;
+        }
+        .offer-card {
+          padding: 28px 20px;
+        }
+        .offer-card h2 {
+          font-size: 28px;
+        }
+      }
+
+      /* --- Small Mobile: 1 column --- */
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+        section {
+          padding: 48px 0;
+        }
+
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+        .category-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .community-grid {
+          grid-template-columns: 1fr;
+        }
+        .favorites-grid {
+          grid-template-columns: 1fr;
+        }
+        .promise-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .card-base {
+          padding: 20px 16px;
+        }
+        .card-base .card-image {
+          height: 160px;
+        }
+        .ad-box {
+          padding: 20px 16px;
+          min-height: 80px;
+        }
+        .marquee-track .mini-card {
+          min-width: 120px;
+          padding: 8px 16px;
+          font-size: 12px;
+        }
+        .timer {
+          gap: 8px;
+        }
+        .timer-block {
+          min-width: 48px;
+          padding: 6px 10px;
+        }
+        .timer-block .num {
+          font-size: 18px;
+        }
+        .header-logo .logo-text {
+          font-size: 18px;
+        }
+        .header-logo .logo-circle {
+          width: 36px;
+          height: 36px;
+        }
+        .header-logo .logo-circle img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================================ -->
+    <!-- ===== PRELOADER ===== -->
+    <!-- ============================================================ -->
+    <div id="preloader">
+      <div class="loader-logo">
+        <img
+          src="https://placehold.co/64x64/0A151D/4EDFD8?text=P"
+          alt="Pure Pulse"
+        />
+      </div>
+      <div class="loader-ring"></div>
+      <div
+        style="
+          margin-top: 20px;
+          font-family: var(--font-heading);
+          color: #4edfd8;
+          letter-spacing: 3px;
+          font-size: 14px;
+        "
+      >
+        PURE PULSE
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ===== OFF CANVAS ===== -->
+    <!-- ============================================================ -->
+    <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+    <div class="offcanvas" id="offcanvas">
+      <a href="#hero">Home</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#deals">Deals</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#community">Community</a>
+      <a href="#ads">Advertise</a>
+      <a href="#contact">GET IN TOUCH</a>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ===== HEADER ===== -->
+    <!-- ============================================================ -->
+    <header class="header" id="header">
+      <div class="container header-inner">
+        <div class="header-logo">
+          <div class="logo-circle">
+            <img
+              src="https://placehold.co/36x36/0A151D/4EDFD8?text=P"
+              alt="Pure Pulse Logo"
+            />
+          </div>
+          <span class="logo-text">Pure <span>Pulse</span></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#ads" class="header-cta">Advertise</a></li>
+            <li><a href="#contact">GET IN TOUCH</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- ===== BACK TO TOP ===== -->
+    <!-- ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
+    <!-- ============================================================ -->
+    <!-- ===== HERO ===== -->
+    <!-- ============================================================ -->
+    <section
+      id="hero"
+      style="
+        padding-top: 120px;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+      "
+    >
+      <div class="container">
+        <div style="max-width: 720px">
+          <div
+            style="
+              font-family: var(--font-dancing);
+              font-size: 22px;
+              color: #4edfd8;
+              margin-bottom: 8px;
+            "
+          >
+            Welcome to Pure Pulse
+          </div>
+          <h1
+            style="
+              font-family: var(--font-heading);
+              font-size: 56px;
+              line-height: 1.12;
+              margin-bottom: 16px;
+              color: #fff;
+            "
+          >
+            Wellness Reviews for <br /><span style="color: #4edfd8"
+              >Every Beat of Life</span
+            >
+          </h1>
+          <p
+            style="
+              color: #d9d9d9;
+              font-size: 20px;
+              margin-bottom: 32px;
+              max-width: 540px;
+            "
+          >
+            Evidence-based health insights, honest product reviews, and wellness
+            guides for Mental Health, Sleep, Bodybuilding, Weight Loss, and
+            more.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap">
+            <a href="#categories" class="btn btn-primary">Explore Categories</a>
+            <a href="#reviews" class="btn btn-outline">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== CATEGORIES ===== -->
+    <!-- ============================================================ -->
+    <section id="categories">
+      <div class="container">
+        <h2 class="section-title">
+          Featured <span class="highlight">Categories</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          Explore our curated wellness categories — from mental health to sexual
+          wellness.
+        </p>
+
+        <div class="category-grid" id="categoryGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== FEATURED REVIEWS ===== -->
+    <!-- ============================================================ -->
+    <section id="reviews">
+      <div class="container">
+        <h2 class="section-title">
+          Featured <span class="highlight">Reviews</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          Honest, in-depth reviews of the best health and wellness products.
+        </p>
+
+        <div class="card-grid" id="featuredGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== DEALS ===== -->
+    <!-- ============================================================ -->
+    <section id="deals">
+      <div class="container">
+        <div class="deals-section">
+          <div class="deals-content">
+            <div class="deals-text">
+              <h2>Summer <span>Discount</span></h2>
+              <p>
+                Grab your favorite wellness products at up to 40% off. Hurry,
+                offers end soon!
+              </p>
+            </div>
+            <div class="timer" id="timer">
+              <div class="timer-block">
+                <span class="num" id="days">00</span>
+                <span class="label">Days</span>
+              </div>
+              <div class="timer-block">
+                <span class="num" id="hours">00</span>
+                <span class="label">Hours</span>
+              </div>
+              <div class="timer-block">
+                <span class="num" id="minutes">00</span>
+                <span class="label">Mins</span>
+              </div>
+              <div class="timer-block">
+                <span class="num" id="seconds">00</span>
+                <span class="label">Secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== BESTSELLERS ===== -->
+    <!-- ============================================================ -->
+    <section id="shop">
+      <div class="container">
+        <h2 class="section-title">
+          Bestsellers <span class="highlight">From Our Community</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          The most trusted and loved wellness products — as voted by our
+          readers.
+        </p>
+
+        <div class="card-grid" id="bestsellerGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== OUR PROMISE ===== -->
+    <!-- ============================================================ -->
+    <section id="promise" style="padding: 60px 0">
+      <div class="container">
+        <h2 class="section-title">
+          Our <span class="highlight">Promise</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p
+          class="section-sub"
+          style="
+            font-family: var(--font-dancing);
+            font-size: 22px;
+            color: #4edfd8;
+          "
+        >
+          "No gimmicks. No fads. Just pure, trustworthy health signals."
+        </p>
+
+        <div class="promise-grid" id="promiseGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== SPECIAL OFFER ===== -->
+    <!-- ============================================================ -->
+    <section id="offer">
+      <div class="container">
+        <div class="offer-card">
+          <h2>🎫 The <span>Wellness Pass</span></h2>
+          <p>
+            Unlock exclusive health guides, premium reviews, and personalized
+            wellness insights.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="font-size: 16px; padding: 16px 48px"
+            >Unlock Now →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== AD BOX ===== -->
+    <!-- ============================================================ -->
+    <div class="container">
+      <div class="ad-box">
+        <span class="ad-label">— Adsterra Ad —</span>
+        <div style="font-size: 13px; color: #8e9398">
+          Your ad script goes here (All Sizes)
+        </div>
+        <div id="adsterra-offer" style="width: 100%; min-height: 90px"></div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ===== BY DIET ===== -->
+    <!-- ============================================================ -->
+    <section id="diet">
+      <div class="container">
+        <h2 class="section-title">
+          By <span class="highlight">Diet &amp; Lifestyle</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          Find reviews and guides tailored to your specific dietary and wellness
+          needs.
+        </p>
+
+        <div
+          class="category-grid"
+          id="dietGrid"
+          style="grid-template-columns: repeat(4, 1fr)"
+        >
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== GENERAL REVIEWS ===== -->
+    <!-- ============================================================ -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">
+          Honest <span class="highlight">Reviews</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          Real experiences from real people. No sponsored fluff, just the truth.
+        </p>
+
+        <div class="card-grid" id="reviewGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== CATEGORY-BASED REVIEWS ===== -->
+    <!-- ============================================================ -->
+    <section id="category-reviews">
+      <div class="container">
+        <!-- Weight Loss -->
+        <h3
+          style="
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+          "
+        >
+          <span style="color: #4edfd8">⚖️ Weight Loss</span> Reviews
+        </h3>
+        <div class="title-underline" style="margin-bottom: 32px"></div>
+        <div class="card-grid" id="weightLossGrid"></div>
+
+        <div class="ad-box" style="margin: 40px 0">
+          <span class="ad-label">— Adsterra Ad —</span>
+          <div style="font-size: 13px; color: #8e9398">Your ad script here</div>
+        </div>
+
+        <!-- Bodybuilding -->
+        <h3
+          style="
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+            margin-top: 60px;
+          "
+        >
+          <span style="color: #4edfd8">🏋️ Bodybuilding</span> Reviews
+        </h3>
+        <div class="title-underline" style="margin-bottom: 32px"></div>
+        <div class="card-grid" id="bodybuildingGrid"></div>
+
+        <div class="ad-box" style="margin: 40px 0">
+          <span class="ad-label">— Adsterra Ad —</span>
+          <div style="font-size: 13px; color: #8e9398">Your ad script here</div>
+        </div>
+
+        <!-- Mental Health -->
+        <h3
+          style="
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+            margin-top: 60px;
+          "
+        >
+          <span style="color: #4edfd8">🧠 Mental Health</span> Reviews
+        </h3>
+        <div class="title-underline" style="margin-bottom: 32px"></div>
+        <div class="card-grid" id="mentalHealthGrid"></div>
+
+        <div class="ad-box" style="margin: 40px 0">
+          <span class="ad-label">— Adsterra Ad —</span>
+          <div style="font-size: 13px; color: #8e9398">Your ad script here</div>
+        </div>
+
+        <!-- Sleep -->
+        <h3
+          style="
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+            margin-top: 60px;
+          "
+        >
+          <span style="color: #4edfd8">😴 Sleep</span> Reviews
+        </h3>
+        <div class="title-underline" style="margin-bottom: 32px"></div>
+        <div class="card-grid" id="sleepGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== READER FAVORITES ===== -->
+    <!-- ============================================================ -->
+    <section id="favorites">
+      <div class="container">
+        <h2 class="section-title">
+          Reader <span class="highlight">Favorites</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          The most popular wellness insights and reviews from our community.
+        </p>
+
+        <div class="favorites-grid" id="favoritesGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== 15-MIN ROUNDUP ===== -->
+    <!-- ============================================================ -->
+    <section style="padding: 40px 0 80px">
+      <div class="container">
+        <div
+          style="
+            background: #0a111b;
+            border-radius: var(--radius);
+            padding: 48px;
+            border: 1px solid rgba(78, 223, 216, 0.06);
+            text-align: center;
+          "
+        >
+          <h2
+            style="
+              font-family: var(--font-heading);
+              font-size: 32px;
+              color: #fff;
+              margin-bottom: 8px;
+            "
+          >
+            ⏱️ <span style="color: #4edfd8">15-Min Healthy</span> Roundup
+          </h2>
+          <p
+            style="
+              color: #8e9398;
+              font-size: 17px;
+              max-width: 500px;
+              margin: 0 auto 24px;
+            "
+          >
+            Quick, actionable wellness tips you can implement in 15 minutes or
+            less.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: 16px;
+              flex-wrap: wrap;
+              justify-content: center;
+            "
+          >
+            <span
+              style="
+                background: #0a151d;
+                padding: 10px 24px;
+                border-radius: 50px;
+                border: 1px solid rgba(78, 223, 216, 0.06);
+                font-size: 14px;
+                color: #d9d9d9;
+              "
+              >🧠 5-Min Mindfulness</span
+            >
+            <span
+              style="
+                background: #0a151d;
+                padding: 10px 24px;
+                border-radius: 50px;
+                border: 1px solid rgba(78, 223, 216, 0.06);
+                font-size: 14px;
+                color: #d9d9d9;
+              "
+              >😴 Sleep Quick Tips</span
+            >
+            <span
+              style="
+                background: #0a151d;
+                padding: 10px 24px;
+                border-radius: 50px;
+                border: 1px solid rgba(78, 223, 216, 0.06);
+                font-size: 14px;
+                color: #d9d9d9;
+              "
+              >🏋️ 10-Min Workout</span
+            >
+            <span
+              style="
+                background: #0a151d;
+                padding: 10px 24px;
+                border-radius: 50px;
+                border: 1px solid rgba(78, 223, 216, 0.06);
+                font-size: 14px;
+                color: #d9d9d9;
+              "
+              >🥗 Quick Nutrition Hacks</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== COMMUNITY SAYS (Glassmorphism - No Slider) ===== -->
+    <!-- ============================================================ -->
+    <section id="community">
+      <div class="container">
+        <h2 class="section-title">
+          What Our <span class="highlight">Community Says</span>
+        </h2>
+        <div class="title-underline"></div>
+        <p class="section-sub">
+          Real stories from real people who have transformed their health with
+          Pure Pulse.
+        </p>
+
+        <div class="community-grid" id="communityGrid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== TWO COLUMN ADS ===== -->
+    <!-- ============================================================ -->
+    <section id="ads">
+      <div class="container">
+        <h2 class="section-title">
+          Advertise <span class="highlight">With Us</span>
+        </h2>
+        <div class="title-underline"></div>
+
+        <div class="two-col">
+          <div class="col">
+            <div class="ad-box" style="min-height: 200px">
+              <span class="ad-label">— Adsterra —</span>
+              <div style="font-size: 13px; color: #8e9398">
+                All sizes ad box
+              </div>
+              <div
+                id="adsterra-col1"
+                style="width: 100%; min-height: 120px"
+              ></div>
+            </div>
+            <div class="ad-box" style="min-height: 200px">
+              <span class="ad-label">— SellHealth —</span>
+              <div style="font-size: 13px; color: #8e9398">
+                Health ads images
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 12px;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin-top: 8px;
+                "
+              >
+                <span
+                  style="
+                    background: #0a151d;
+                    padding: 12px 24px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(78, 223, 216, 0.06);
+                    font-size: 13px;
+                    color: #d9d9d9;
+                  "
+                  >💊 Supplement Ad</span
+                >
+                <span
+                  style="
+                    background: #0a151d;
+                    padding: 12px 24px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(78, 223, 216, 0.06);
+                    font-size: 13px;
+                    color: #d9d9d9;
+                  "
+                  >🧴 Skincare Ad</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="ad-box"
+              style="
+                min-height: 420px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+              "
+            >
+              <span class="ad-label">— SellHealth Featured —</span>
+              <div
+                style="
+                  background: #0a151d;
+                  padding: 24px;
+                  border-radius: 12px;
+                  border: 1px solid rgba(78, 223, 216, 0.06);
+                "
+              >
+                <div style="font-size: 32px; margin-bottom: 8px">💊</div>
+                <div style="font-weight: 600; color: #fff">
+                  Premium Health Product
+                </div>
+                <div style="font-size: 13px; color: #8e9398">
+                  High-converting supplement ad
+                </div>
+              </div>
+              <div
+                style="
+                  background: #0a151d;
+                  padding: 24px;
+                  border-radius: 12px;
+                  border: 1px solid rgba(78, 223, 216, 0.06);
+                "
+              >
+                <div style="font-size: 32px; margin-bottom: 8px">🧴</div>
+                <div style="font-weight: 600; color: #fff">
+                  Natural Skincare
+                </div>
+                <div style="font-size: 13px; color: #8e9398">
+                  Beauty & wellness product ad
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== MISSIONARY ===== -->
+    <!-- ============================================================ -->
+    <section id="contact">
+      <div class="container">
+        <div class="missionary-section">
+          <div class="text">
+            <h2>Our <span style="color: #4edfd8">Mission</span></h2>
+            <p>
+              At Pure Pulse, we believe that true wellness is holistic. It's not
+              just about physical strength—it's about mental clarity, restful
+              sleep, balanced nutrition, and feeling confident in your own skin.
+            </p>
+            <p
+              style="
+                margin-top: 12px;
+                font-family: var(--font-dancing);
+                font-size: 22px;
+                color: #4edfd8;
+              "
+            >
+              No gimmicks. No fads. Just pure, trustworthy health signals.
+            </p>
+            <a href="#" class="btn btn-primary" style="margin-top: 20px"
+              >Join Our Community</a
+            >
+          </div>
+          <div class="image">
+            <img
+              src="https://placehold.co/600x400/0A111B/4EDFD8?text=Pure+Pulse+Mission"
+              alt="Pure Pulse Mission"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ===== MARQUEE ===== -->
+    <!-- ============================================================ -->
+    <div class="marquee-section" id="marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ===== FOOTER ===== -->
+    <!-- ============================================================ -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-circle">
+                <img
+                  src="https://placehold.co/36x36/0A151D/4EDFD8?text=P"
+                  alt="Pure Pulse"
+                />
+              </div>
+              <span class="logo-text">Pure <span>Pulse</span></span>
+            </div>
+            <p>
+              Evidence-based wellness reviews and insights for mind &amp; body.
+              Covering Mental Health, Sleep, Fitness, Weight Loss, and more.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" data-tooltip="Pinterest"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a href="#" class="social-link" data-tooltip="Quora"
+                ><i class="fab fa-quora"></i
+              ></a>
+              <a href="#" class="social-link" data-tooltip="Tumblr"
+                ><i class="fab fa-tumblr"></i
+              ></a>
+              <a href="#" class="social-link" data-tooltip="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" data-tooltip="Substack"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a href="#" class="social-link" data-tooltip="Medium"
+                ><i class="fab fa-medium"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#reviews">Featured Reviews</a></li>
+              <li><a href="#deals">Deals &amp; Offers</a></li>
+              <li><a href="#shop">Shop</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>GET IN TOUCH</h4>
+            <ul>
+              <li>
+                <a href="mailto:hello@purepulse.com" style="color: #4edfd8"
+                  >hello@purepulse.com</a
+                >
+              </li>
+              <li>
+                <span style="color: #8e9398"
+                  >Follow us for daily wellness insights</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >&copy; <span id="year"></span> Pure Pulse. All rights
+            reserved.</span
+          >
+          <div class="legal">
+            <a href="#">Disclaimer</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- ===== JAVASCRIPT ===== -->
+    <!-- ============================================================ -->
+    <script>
+      // ===== GSAP REGISTER =====
+      gsap.registerPlugin(ScrollTrigger);
+
+      // ===== DYNAMIC YEAR =====
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ===== PRELOADER =====
+      window.addEventListener("load", () => {
+        document.getElementById("preloader").classList.add("hide");
+        initAnimations();
+        startTimer();
+        setup3DCards();
+      });
+
+      // ============================================================
+      // ===== DATA =====
+      // ============================================================
+
+      const badgeColors = [
+        "badge-gold",
+        "badge-rose",
+        "badge-mint",
+        "badge-lavender",
+        "badge-coral",
+        "badge-amber",
+        "badge-cyan",
+        "badge-purple",
+      ];
+
+      function getBadge() {
+        return badgeColors[Math.floor(Math.random() * badgeColors.length)];
+      }
+
+      // Categories
+      const categories = [
+        {
+          icon: "🧠",
+          title: "Mental Health",
+          desc: "Stress, anxiety & mindfulness",
+        },
+        { icon: "😴", title: "Sleep", desc: "Optimization & recovery" },
+        { icon: "🏋️", title: "Bodybuilding", desc: "Strength & muscle growth" },
+        { icon: "⚖️", title: "Weight Loss", desc: "Sustainable nutrition" },
+        { icon: "👨", title: "Men's Health", desc: "Hormones & wellness" },
+        { icon: "👩", title: "Women's Health", desc: "Hormonal balance" },
+        { icon: "❤️", title: "Sexual Health", desc: "Intimacy & wellness" },
+        { icon: "🥗", title: "Nutrition", desc: "Balanced diet guides" },
+        { icon: "🧘", title: "Mindfulness", desc: "Meditation & peace" },
+        { icon: "💊", title: "Supplements", desc: "Evidence-based picks" },
+        { icon: "🔥", title: "HIIT & Cardio", desc: "Fat burn workouts" },
+        { icon: "🌿", title: "Natural Remedies", desc: "Herbal & holistic" },
+      ];
+
+      // Featured Reviews
+      const featuredReviews = [
+        {
+          title: "Best Sleep Supplements 2026",
+          desc: "We tested 15 sleep aids to find the ones that actually help you fall asleep faster.",
+          category: "Sleep",
+          badge: "Top Pick",
+          price: "$29.99",
+        },
+        {
+          title: "Top 5 Pre-Workout Supplements",
+          desc: "Boost your energy, focus, and performance with these clinically-backed formulas.",
+          category: "Bodybuilding",
+          badge: "Best Value",
+          price: "$39.99",
+        },
+        {
+          title: "Mental Health Apps Reviewed",
+          desc: "From meditation to CBT, we reviewed the best mental health apps for anxiety relief.",
+          category: "Mental Health",
+          badge: "Editor's Choice",
+          price: "Free / $9.99",
+        },
+        {
+          title: "Sustainable Weight Loss Guide",
+          desc: "Forget crash diets. This science-backed guide helped 100+ readers lose weight.",
+          category: "Weight Loss",
+          badge: "Reader Favorite",
+          price: "$19.99",
+        },
+      ];
+
+      // Bestsellers
+      const bestsellers = [
+        {
+          title: "Pure Sleep Pro",
+          desc: "Advanced melatonin & magnesium blend for deep, restorative sleep.",
+          category: "Sleep",
+          price: "$34.99",
+          oldPrice: "$49.99",
+          badge: "Bestseller",
+        },
+        {
+          title: "Muscle Recovery Complex",
+          desc: "Post-workout formula with BCAAs, glutamine, and electrolytes.",
+          category: "Bodybuilding",
+          price: "$44.99",
+          oldPrice: "$59.99",
+          badge: "Top Rated",
+        },
+        {
+          title: "Daily Men's Health Pack",
+          desc: "Essential vitamins and minerals for men's hormone health and energy.",
+          category: "Men's Health",
+          price: "$39.99",
+          oldPrice: "$54.99",
+          badge: "Best Seller",
+        },
+        {
+          title: "Women's Hormone Balance",
+          desc: "Natural support for hormonal balance, mood, and energy levels.",
+          category: "Women's Health",
+          price: "$42.99",
+          oldPrice: "$58.99",
+          badge: "Popular",
+        },
+      ];
+
+      // Promises
+      const promises = [
+        {
+          icon: "🚚",
+          title: "On Time Delivery",
+          desc: "Guaranteed delivery within 3-5 business days",
+        },
+        {
+          icon: "⭐",
+          title: "500+ Reviews",
+          desc: "Trusted by thousands of readers worldwide",
+        },
+        {
+          icon: "⏱️",
+          title: "24/7 Support",
+          desc: "Our team is here to help you anytime",
+        },
+        {
+          icon: "🌿",
+          title: "Baked Fresh",
+          desc: "Honest, unfiltered, and always evidence-based",
+        },
+      ];
+
+      // Diets
+      const diets = [
+        {
+          icon: "🌱",
+          title: "Vegetarian",
+          desc: "Plant-based wellness guides",
+        },
+        { icon: "🥩", title: "Keto", desc: "Low-carb, high-fat lifestyle" },
+        {
+          icon: "🌾",
+          title: "Gluten-Free",
+          desc: "Healthy living without gluten",
+        },
+        { icon: "🍗", title: "High Protein", desc: "Fuel your fitness goals" },
+      ];
+
+      // Reviews
+      const reviews = [
+        {
+          title: "Vegan Chickpea Chili",
+          desc: "A hearty, protein-packed chili perfect for meal prep and weight loss.",
+          category: "Nutrition",
+          author: "Sarah M.",
+          time: "15 min",
+        },
+        {
+          title: "Honey Whipped Ricotta Toast",
+          desc: "A 10-minute breakfast that's both indulgent and nutritious.",
+          category: "Breakfast",
+          author: "James R.",
+          time: "10 min",
+        },
+        {
+          title: "Easy Garlic Dill Pickles",
+          desc: "Fermented pickles that support gut health. Better than store-bought!",
+          category: "Fermentation",
+          author: "Priya K.",
+          time: "20 min",
+        },
+        {
+          title: "French Lentils with Mushrooms",
+          desc: "A hearty, plant-based dinner rich in fiber and protein.",
+          category: "Dinner",
+          author: "Alex T.",
+          time: "30 min",
+        },
+        {
+          title: "Fresh Lemon Glaze Pancakes",
+          desc: "Fluffy, tangy pancakes that make healthy breakfasts feel like a treat.",
+          category: "Breakfast",
+          author: "Nina P.",
+          time: "15 min",
+        },
+        {
+          title: "Roasted Cauliflower Tacos",
+          desc: "Crispy, smoky cauliflower tacos with a creamy vegan sauce.",
+          category: "Dinner",
+          author: "Carlos R.",
+          time: "25 min",
+        },
+      ];
+
+      // Category-based Reviews
+      const weightLossReviews = [
+        {
+          title: "Keto Diet: 30-Day Results",
+          desc: "Real results from 30 days on keto. Weight loss, energy, and cravings explained.",
+          category: "Weight Loss",
+          author: "Dr. Sarah",
+          badge: "Top Rated",
+        },
+        {
+          title: "Intermittent Fasting Guide",
+          desc: "How to start intermittent fasting for sustainable weight loss without hunger.",
+          category: "Weight Loss",
+          author: "James K.",
+          badge: "Popular",
+        },
+        {
+          title: "Low-Carb Meal Prep Ideas",
+          desc: "Save time and lose weight with these easy low-carb meal prep recipes.",
+          category: "Weight Loss",
+          author: "Maria L.",
+          badge: "Editor Pick",
+        },
+      ];
+
+      const bodybuildingReviews = [
+        {
+          title: "Best Protein Powders 2026",
+          desc: "We tested 20 protein powders to find the best for muscle growth and taste.",
+          category: "Bodybuilding",
+          author: "Alex R.",
+          badge: "Best Value",
+        },
+        {
+          title: "Push Pull Legs Split Guide",
+          desc: "Maximize muscle growth with this science-backed PPL workout routine.",
+          category: "Bodybuilding",
+          author: "Coach Mike",
+          badge: "Top Pick",
+        },
+        {
+          title: "Creatine: Benefits & Dosage",
+          desc: "Everything you need to know about creatine for strength and muscle gains.",
+          category: "Bodybuilding",
+          author: "Dr. Emily",
+          badge: "Essential",
+        },
+      ];
+
+      const mentalHealthReviews = [
+        {
+          title: "Best Meditation Apps 2026",
+          desc: "Top meditation apps for anxiety, stress, and daily mindfulness.",
+          category: "Mental Health",
+          author: "Priya S.",
+          badge: "Top Pick",
+        },
+        {
+          title: "CBT Techniques for Anxiety",
+          desc: "Cognitive Behavioral Therapy techniques you can use at home for anxiety relief.",
+          category: "Mental Health",
+          author: "Dr. James",
+          badge: "Expert Choice",
+        },
+        {
+          title: "Journaling for Mental Health",
+          desc: "How daily journaling can improve mental clarity and emotional well-being.",
+          category: "Mental Health",
+          author: "Laura W.",
+          badge: "Reader Fav",
+        },
+      ];
+
+      const sleepReviews = [
+        {
+          title: "Best Sleep Trackers 2026",
+          desc: "We tested 10 sleep trackers to find the most accurate for deep sleep monitoring.",
+          category: "Sleep",
+          author: "Tom H.",
+          badge: "Top Tech",
+        },
+        {
+          title: "Magnesium for Better Sleep",
+          desc: "How magnesium glycinate can help you fall asleep faster and stay asleep.",
+          category: "Sleep",
+          author: "Dr. Nina",
+          badge: "Science Backed",
+        },
+        {
+          title: "White Noise vs. Pink Noise",
+          desc: "Which sound frequency is best for deep, restorative sleep? We compare.",
+          category: "Sleep",
+          author: "Alex P.",
+          badge: "Must Read",
+        },
+      ];
+
+      // Favorites
+      const favorites = [
+        {
+          title: "Honey Whipped Ricotta Toast",
+          desc: "A reader favorite breakfast that takes just 10 minutes.",
+          author: "Emily C.",
+          likes: "1.2k",
+        },
+        {
+          title: "15-Min Healthy Breakfasts Roundup",
+          desc: "Quick, nutritious breakfast ideas for busy mornings.",
+          author: "Pure Pulse Team",
+          likes: "980",
+        },
+        {
+          title: "Easy Homemade Garlic Pickles",
+          desc: "Fermented pickles that support gut health and digestion.",
+          author: "Michael D.",
+          likes: "760",
+        },
+        {
+          title: "Vegan Chickpea Chili",
+          desc: "A hearty, protein-packed chili perfect for weight loss.",
+          author: "Sarah M.",
+          likes: "1.5k",
+        },
+      ];
+
+      // Community (Glassmorphism)
+      const communityData = [
+        {
+          icon: "🌟",
+          title: "A Life-Changing Resource",
+          desc: "Pure Pulse has completely transformed my approach to health. I feel more in control than ever before.",
+          author: "– Sarah J.",
+        },
+        {
+          icon: "🔥",
+          title: "Gained 10lbs of Muscle",
+          desc: "The bodybuilding guides are incredible. I hit PRs every week thanks to their advice.",
+          author: "– Tom K.",
+        },
+        {
+          icon: "🌙",
+          title: "Sleep Quality Skyrocketed",
+          desc: "I used to wake up 3x per night. Now I sleep through like a baby. Thank you!",
+          author: "– Nina P.",
+        },
+        {
+          icon: "💪",
+          title: "Best Wellness Hub",
+          desc: "Pure Pulse is the only resource that covers everything I care about in one place.",
+          author: "– Amir R.",
+        },
+      ];
+
+      // Marquee
+      const marqueeData = [
+        "🧠 Mental Health",
+        "😴 Sleep",
+        "🏋️ Bodybuilding",
+        "⚖️ Weight Loss",
+        "👨 Men's Health",
+        "👩 Women's Health",
+        "❤️ Sexual Health",
+        "🥗 Nutrition",
+        "🧘 Mindfulness",
+        "💊 Supplements",
+        "🔥 HIIT",
+        "🌿 Natural Remedies",
+        "🍗 High Protein",
+        "🌱 Vegetarian",
+        "🥩 Keto",
+        "🌾 Gluten-Free",
+      ];
+
+      // ============================================================
+      // ===== RENDER FUNCTIONS =====
+      // ============================================================
+
+      function renderCategoryGrid() {
+        const grid = document.getElementById("categoryGrid");
+        grid.innerHTML = categories
+          .map(
+            (cat) => `
+                        <div class="cat-card">
+                            <span class="cat-icon">${cat.icon}</span>
+                            <h4>${cat.title}</h4>
+                            <p>${cat.desc}</p>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderFeatured() {
+        const grid = document.getElementById("featuredGrid");
+        grid.innerHTML = featuredReviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span class="card-price">${item.price}</span>
+                                <a href="#" class="view-more">Read Review</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderBestsellers() {
+        const grid = document.getElementById("bestsellerGrid");
+        grid.innerHTML = bestsellers
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span class="card-price">${item.price} <span class="old">${item.oldPrice}</span></span>
+                                <a href="#" class="view-more">View Product</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderPromises() {
+        const grid = document.getElementById("promiseGrid");
+        grid.innerHTML = promises
+          .map(
+            (item) => `
+                        <div class="promise-item">
+                            <span class="icon">${item.icon}</span>
+                            <h4>${item.title}</h4>
+                            <p>${item.desc}</p>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderDiets() {
+        const grid = document.getElementById("dietGrid");
+        grid.innerHTML = diets
+          .map(
+            (item) => `
+                        <div class="cat-card">
+                            <span class="cat-icon">${item.icon}</span>
+                            <h4>${item.title}</h4>
+                            <p>${item.desc}</p>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderReviews() {
+        const grid = document.getElementById("reviewGrid");
+        grid.innerHTML = reviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.time}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span style="font-family:var(--font-caveat); color:#8E9398; font-size:14px;">${item.author}</span>
+                                <a href="#" class="view-more">Read More</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderCategoryReviews() {
+        const wlGrid = document.getElementById("weightLossGrid");
+        wlGrid.innerHTML = weightLossReviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span style="font-family:var(--font-caveat); color:#8E9398; font-size:14px;">${item.author}</span>
+                                <a href="#" class="view-more">Read More</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+
+        const bbGrid = document.getElementById("bodybuildingGrid");
+        bbGrid.innerHTML = bodybuildingReviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span style="font-family:var(--font-caveat); color:#8E9398; font-size:14px;">${item.author}</span>
+                                <a href="#" class="view-more">Read More</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+
+        const mhGrid = document.getElementById("mentalHealthGrid");
+        mhGrid.innerHTML = mentalHealthReviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span style="font-family:var(--font-caveat); color:#8E9398; font-size:14px;">${item.author}</span>
+                                <a href="#" class="view-more">Read More</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+
+        const sleepGrid = document.getElementById("sleepGrid");
+        sleepGrid.innerHTML = sleepReviews
+          .map(
+            (item) => `
+                        <div class="card-base">
+                            <div class="card-image">
+                                <img src="https://placehold.co/400x200/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                                <span class="card-badge ${getBadge()}">${item.badge}</span>
+                            </div>
+                            <span class="card-category">${item.category}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                            <div class="card-footer">
+                                <span style="font-family:var(--font-caveat); color:#8E9398; font-size:14px;">${item.author}</span>
+                                <a href="#" class="view-more">Read More</a>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderFavorites() {
+        const grid = document.getElementById("favoritesGrid");
+        grid.innerHTML = favorites
+          .map(
+            (item) => `
+                        <div class="fav-item">
+                            <div class="fav-img">
+                                <img src="https://placehold.co/400x180/0A111B/4EDFD8?text=${encodeURIComponent(item.title)}" alt="${item.title}" />
+                            </div>
+                            <div class="fav-body">
+                                <h4>${item.title}</h4>
+                                <p>${item.desc}</p>
+                                <div class="fav-meta">
+                                    <span>${item.author}</span>
+                                    <span>❤️ ${item.likes}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderCommunity() {
+        const grid = document.getElementById("communityGrid");
+        grid.innerHTML = communityData
+          .map(
+            (item) => `
+                        <div class="community-card">
+                            <span class="icon">${item.icon}</span>
+                            <h4>${item.title}</h4>
+                            <p>${item.desc}</p>
+                            <span class="author">${item.author}</span>
+                        </div>
+                    `,
+          )
+          .join("");
+      }
+
+      function renderMarquee() {
+        const track = document.getElementById("marqueeTrack");
+        const items = marqueeData
+          .map((item) => `<div class="mini-card">${item}</div>`)
+          .join("");
+        track.innerHTML = items + items;
+      }
+
+      // ===== INIT RENDER =====
+      renderCategoryGrid();
+      renderFeatured();
+      renderBestsellers();
+      renderPromises();
+      renderDiets();
+      renderReviews();
+      renderCategoryReviews();
+      renderFavorites();
+      renderCommunity();
+      renderMarquee();
+
+      // ============================================================
+      // ===== COUNTDOWN TIMER =====
+      // ============================================================
+      function startTimer() {
+        let targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 14);
+        targetDate.setHours(23, 59, 59, 0);
+
+        function updateTimer() {
+          const now = new Date();
+          const diff = targetDate - now;
+
+          if (diff <= 0) {
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+            return;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          );
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = String(days).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes,
+          ).padStart(2, "0");
+          document.getElementById("seconds").textContent = String(
+            seconds,
+          ).padStart(2, "0");
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+      }
+
+      // ============================================================
+      // ===== 3D CATEGORY CARDS =====
+      // ============================================================
+      function setup3DCards() {
+        document.querySelectorAll(".cat-card").forEach((card) => {
+          card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty("--mouse-x", x + "%");
+            card.style.setProperty("--mouse-y", y + "%");
+
+            const rotateX = ((e.clientY - rect.top) / rect.height - 0.5) * 6;
+            const rotateY = ((e.clientX - rect.left) / rect.width - 0.5) * -6;
+            card.style.transform = `translateY(-8px) scale(1.03) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform =
+              "translateY(0) scale(1) rotateX(0) rotateY(0)";
+          });
+        });
+      }
+
+      // ============================================================
+      // ===== GSAP ANIMATIONS =====
+      // ============================================================
+      function initAnimations() {
+        // Card-base
+        document.querySelectorAll(".card-base").forEach((el, i) => {
+          gsap.fromTo(
+            el,
+            {
+              opacity: 0,
+              y: 50,
+              scale: 0.95,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              duration: 0.8,
+              delay: i * 0.05,
+              scrollTrigger: {
+                trigger: el,
+                start: "top 92%",
+                toggleActions: "play none none none",
+              },
+              ease: "power3.out",
+            },
+          );
+        });
+
+        // Cat-card
+        document.querySelectorAll(".cat-card").forEach((el, i) => {
+          gsap.from(el, {
+            opacity: 0,
+            y: 40,
+            scale: 0.9,
+            duration: 0.7,
+            delay: i * 0.04,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 94%",
+              toggleActions: "play none none none",
+            },
+            ease: "power2.out",
+          });
+        });
+
+        // Promise items
+        document.querySelectorAll(".promise-item").forEach((el, i) => {
+          gsap.from(el, {
+            opacity: 0,
+            y: 30,
+            duration: 0.7,
+            delay: i * 0.08,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 92%",
+              toggleActions: "play none none none",
+            },
+            ease: "power2.out",
+          });
+        });
+
+        // Favorites
+        document.querySelectorAll(".fav-item").forEach((el, i) => {
+          gsap.from(el, {
+            opacity: 0,
+            y: 40,
+            duration: 0.8,
+            delay: i * 0.06,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+            ease: "power3.out",
+          });
+        });
+
+        // Community cards
+        document.querySelectorAll(".community-card").forEach((el, i) => {
+          gsap.from(el, {
+            opacity: 0,
+            y: 40,
+            scale: 0.95,
+            duration: 0.9,
+            delay: i * 0.08,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+            ease: "power3.out",
+          });
+        });
+
+        // Section titles
+        document.querySelectorAll(".section-title").forEach((title) => {
+          gsap.from(title, {
+            opacity: 0,
+            y: 30,
+            duration: 0.8,
+            scrollTrigger: {
+              trigger: title,
+              start: "top 92%",
+              toggleActions: "play none none none",
+            },
+            ease: "power3.out",
+          });
+        });
+
+        // Underlines
+        document.querySelectorAll(".title-underline").forEach((ul) => {
+          gsap.from(ul, {
+            width: 0,
+            duration: 1.2,
+            scrollTrigger: {
+              trigger: ul,
+              start: "top 94%",
+              toggleActions: "play none none none",
+            },
+            ease: "power3.inOut",
+          });
+        });
+
+        // Missionary
+        gsap.from(".missionary-section .text", {
+          opacity: 0,
+          x: -40,
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".missionary-section",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          ease: "power3.out",
+        });
+        gsap.from(".missionary-section .image", {
+          opacity: 0,
+          x: 40,
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".missionary-section",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+          ease: "power3.out",
+        });
+
+        // Two column
+        gsap.utils.toArray(".two-col .col").forEach((col, i) => {
+          gsap.from(col, {
+            opacity: 0,
+            y: 40,
+            duration: 0.9,
+            delay: i * 0.2,
+            scrollTrigger: {
+              trigger: col,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+            ease: "power3.out",
+          });
+        });
+
+        // Marquee
+        gsap.from(".marquee-track .mini-card", {
+          opacity: 0,
+          scale: 0.9,
+          duration: 0.6,
+          stagger: 0.03,
+          scrollTrigger: {
+            trigger: ".marquee-section",
+            start: "top 88%",
+            toggleActions: "play none none none",
+          },
+          ease: "power2.out",
+        });
+
+        // Deals
+        gsap.from(".deals-section", {
+          opacity: 0,
+          scale: 0.97,
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".deals-section",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+          ease: "power3.out",
+        });
+
+        // Offer
+        gsap.from(".offer-card", {
+          opacity: 0,
+          scale: 0.95,
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".offer-card",
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+          ease: "power3.out",
+        });
+      }
+
+      // ============================================================
+      // ===== HEADER SCROLL =====
+      // ============================================================
+      let lastScrollY = 0;
+      const header = document.getElementById("header");
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > 100) {
+          if (currentScrollY < lastScrollY) {
+            header.classList.add("visible");
+          } else {
+            header.classList.remove("visible");
+          }
+        } else {
+          header.classList.remove("visible");
+        }
+
+        if (currentScrollY > 500) {
+          backToTop.classList.add("visible");
+        } else {
+          backToTop.classList.remove("visible");
+        }
+
+        lastScrollY = currentScrollY;
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // ============================================================
+      // ===== HAMBURGER / OFFCANVAS =====
+      // ============================================================
+      const hamburger = document.getElementById("hamburger");
+      const offcanvas = document.getElementById("offcanvas");
+      const overlay = document.getElementById("offcanvasOverlay");
+
+      function toggleMenu() {
+        hamburger.classList.toggle("active");
+        offcanvas.classList.toggle("open");
+        overlay.classList.toggle("open");
+        document.body.style.overflow = offcanvas.classList.contains("open")
+          ? "hidden"
+          : "";
+      }
+
+      hamburger.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+
+      offcanvas.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (offcanvas.classList.contains("open")) {
+            toggleMenu();
+          }
+        });
+      });
+
+      console.log("✅ Pure Pulse — Fully Updated Landing Page Loaded!");
+      console.log("📌 4/3/2/1 Responsive Card Grid");
+      console.log("📌 3D effect ONLY on Category Cards");
+      console.log("📌 Border glows on hover (no background glow)");
+      console.log("📌 Glassmorphism Community Cards (No Slider)");
+      console.log(
+        "📌 Social: Pinterest, Quora, Tumblr, Substack, Facebook, Medium",
+      );
+      console.log("📌 Dynamic copyright year");
+      console.log("📌 SEO Meta Tags Added");
+    </script>
+  </body>
+</html>
