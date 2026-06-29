@@ -3,33 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ===== SEO META TAGS ===== -->
-    <title>
-      Pure Pulse - Wellness Reviews & Health Insights for Mind & Body
-    </title>
+    <title>Pure Pulse - Wellness Reviews & Health Insights</title>
     <meta
       name="description"
       content="Pure Pulse delivers honest wellness reviews, health insights, and evidence-based guides for Mental Health, Sleep, Bodybuilding, Weight Loss, and more."
     />
     <meta
       name="keywords"
-      content="wellness reviews, health insights, mental health, sleep optimization, bodybuilding, weight loss, men's health, women's health, sexual health, nutrition"
+      content="wellness reviews, health insights, mental health, sleep optimization, bodybuilding, weight loss"
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://purepulse365.blogspot.com/" />
+    <link rel="canonical" href="https://purepulse.vercel.app/" />
 
-    <!-- Open Graph -->
+    <!-- IMPACT-SITE-VERIFICATION -->
     <meta
-      property="og:title"
-      content="Pure Pulse - Wellness Reviews & Health Insights"
+      name="impact-site-verification"
+      value="1fd4e544-5f54-43dc-a28c-78f1fccfc369"
     />
-    <meta
-      property="og:description"
-      content="Evidence-based wellness reviews and health insights for every beat of life."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://purepulse365.blogspot.com/" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,215 +35,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- GSAP & ScrollTrigger -->
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <style>
-      /* ============================================================ */
-      /* ===== UTILITY CLASSES (Tailwind-like) ===== */
-      /* ============================================================ */
-      .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-
-      .flex {
-        display: flex;
-      }
-      .flex-col {
-        flex-direction: column;
-      }
-      .items-center {
-        align-items: center;
-      }
-      .justify-between {
-        justify-content: space-between;
-      }
-      .justify-center {
-        justify-content: center;
-      }
-      .gap-2 {
-        gap: 8px;
-      }
-      .gap-3 {
-        gap: 12px;
-      }
-      .gap-4 {
-        gap: 16px;
-      }
-      .gap-6 {
-        gap: 24px;
-      }
-      .gap-8 {
-        gap: 32px;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-      .text-white {
-        color: #fff;
-      }
-      .text-gray {
-        color: #8e9398;
-      }
-      .text-light {
-        color: #d9d9d9;
-      }
-      .text-teal {
-        color: #4edfd8;
-      }
-      .text-sm {
-        font-size: 14px;
-      }
-      .text-base {
-        font-size: 16px;
-      }
-      .text-lg {
-        font-size: 18px;
-      }
-      .text-xl {
-        font-size: 22px;
-      }
-      .text-2xl {
-        font-size: 28px;
-      }
-      .text-3xl {
-        font-size: 34px;
-      }
-      .text-4xl {
-        font-size: 42px;
-      }
-
-      .font-heading {
-        font-family: "Playfair Display", serif;
-      }
-      .font-body {
-        font-family: "Google Sans", "Segoe UI", sans-serif;
-      }
-      .font-btn {
-        font-family: "Orbitron", monospace;
-      }
-      .font-link {
-        font-family: "Mulish", sans-serif;
-      }
-      .font-caveat {
-        font-family: "Caveat", cursive;
-      }
-      .font-dancing {
-        font-family: "Dancing Script", cursive;
-      }
-
-      .font-bold {
-        font-weight: 700;
-      }
-      .font-semibold {
-        font-weight: 600;
-      }
-      .font-medium {
-        font-weight: 500;
-      }
-
-      .mt-2 {
-        margin-top: 8px;
-      }
-      .mt-4 {
-        margin-top: 16px;
-      }
-      .mt-6 {
-        margin-top: 24px;
-      }
-      .mt-8 {
-        margin-top: 32px;
-      }
-      .mt-12 {
-        margin-top: 48px;
-      }
-      .mb-2 {
-        margin-bottom: 8px;
-      }
-      .mb-4 {
-        margin-bottom: 16px;
-      }
-      .mb-6 {
-        margin-bottom: 24px;
-      }
-      .mb-8 {
-        margin-bottom: 32px;
-      }
-
-      .p-4 {
-        padding: 16px;
-      }
-      .p-6 {
-        padding: 24px;
-      }
-      .p-8 {
-        padding: 32px;
-      }
-
-      .rounded {
-        border-radius: 12px;
-      }
-      .rounded-full {
-        border-radius: 50%;
-      }
-      .rounded-xl {
-        border-radius: 16px;
-      }
-
-      .bg-dark {
-        background: #0a151d;
-      }
-      .bg-card {
-        background: #0a111b;
-      }
-      .bg-secondary {
-        background: #0a111b;
-      }
-      .bg-teal {
-        background: #4edfd8;
-      }
-
-      .border {
-        border: 1px solid rgba(78, 223, 216, 0.12);
-      }
-      .border-teal {
-        border-color: #4edfd8;
-      }
-
-      .shadow {
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      }
-      .shadow-hover {
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-      }
-
-      .w-full {
-        width: 100%;
-      }
-      .max-w-lg {
-        max-width: 512px;
-      }
-      .max-w-xl {
-        max-width: 640px;
-      }
-      .max-w-2xl {
-        max-width: 768px;
-      }
-
-      /* ============================================================ */
       /* ===== CSS VARIABLES ===== */
-      /* ============================================================ */
       :root {
         --primary: #0a151d;
         --secondary: #0a111b;
         --card-bg: #0a111b;
         --accent: #4edfd8;
         --accent-light: #8ef7f0;
-        --aqua: #5fd7d2;
         --dark-teal: #294c4e;
         --white: #ffffff;
         --light-gray: #d9d9d9;
@@ -262,7 +55,7 @@
         --deep-navy: #0a111b;
         --almost-black: #050e17;
         --glass-bg: rgba(10, 17, 27, 0.85);
-        --glass-border: rgba(78, 223, 216, 0.08);
+        --glass-border: rgba(78, 223, 216, 0.06);
         --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
         --radius: 16px;
         --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -274,9 +67,7 @@
         --font-dancing: "Dancing Script", cursive;
       }
 
-      /* ============================================================ */
       /* ===== RESET ===== */
-      /* ============================================================ */
       *,
       *::before,
       *::after {
@@ -313,9 +104,13 @@
         display: block;
       }
 
-      /* ============================================================ */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
       /* ===== PRELOADER ===== */
-      /* ============================================================ */
       #preloader {
         position: fixed;
         inset: 0;
@@ -370,9 +165,7 @@
         }
       }
 
-      /* ============================================================ */
       /* ===== SCROLLBAR ===== */
-      /* ============================================================ */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -384,9 +177,7 @@
         border-radius: 4px;
       }
 
-      /* ============================================================ */
       /* ===== HEADER ===== */
-      /* ============================================================ */
       .header {
         position: fixed;
         top: 0;
@@ -468,7 +259,6 @@
         padding: 4px 0;
       }
 
-      /* Glowing border effect on header hover */
       .nav-links a::after {
         content: "";
         position: absolute;
@@ -603,9 +393,7 @@
         padding-left: 12px;
       }
 
-      /* ============================================================ */
       /* ===== BACK TO TOP ===== */
-      /* ============================================================ */
       .back-to-top {
         position: fixed;
         bottom: 32px;
@@ -641,9 +429,7 @@
         box-shadow: 0 4px 32px rgba(78, 223, 216, 0.55);
       }
 
-      /* ============================================================ */
       /* ===== SECTIONS ===== */
-      /* ============================================================ */
       section {
         padding: 80px 0;
       }
@@ -699,9 +485,7 @@
         font-size: 17px;
       }
 
-      /* ============================================================ */
       /* ===== BUTTONS ===== */
-      /* ============================================================ */
       .btn {
         display: inline-block;
         padding: 12px 32px;
@@ -741,13 +525,8 @@
         box-shadow: 0 0 30px rgba(78, 223, 216, 0.12);
       }
 
-      .btn-sm {
-        padding: 8px 20px;
-        font-size: 11px;
-      }
-
       /* ============================================================ */
-      /* ===== CARDS - 4/3/2/1 RESPONSIVE GRID ===== */
+      /* ===== CARDS - 4/3/2/1 RESPONSIVE ===== */
       /* ============================================================ */
       .card-grid {
         display: grid;
@@ -755,19 +534,17 @@
         grid-template-columns: repeat(4, 1fr);
       }
 
-      /* ===== CARD BASE ===== */
+      /* ===== CARD BASE - NO BACKGROUND GLOW, ONLY 2px BORDER ===== */
       .card-base {
         background: #0a111b;
         border-radius: var(--radius);
         padding: 24px 20px;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         transition: all var(--transition);
-        position: relative;
-        overflow: hidden;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         opacity: 0;
         transform: translateY(40px);
-        /* No background glow on hover */
+        /* NO background glow */
       }
 
       .card-base.reveal {
@@ -775,51 +552,15 @@
         transform: translateY(0);
       }
 
-      /* Glowing border ONLY on hover - with animation */
-      .card-base::before {
-        content: "";
-        position: absolute;
-        inset: -2px;
-        border-radius: var(--radius);
-        background: linear-gradient(
-          135deg,
-          transparent 30%,
-          #4edfd8,
-          transparent 70%
-        );
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        z-index: 0;
-        pointer-events: none;
-        background-size: 200% 200%;
-      }
-
-      .card-base:hover::before {
-        opacity: 1;
-        animation: border-glow 1.2s ease-in-out infinite alternate;
-      }
-
-      @keyframes border-glow {
-        0% {
-          background-position: 0% 0%;
-        }
-        100% {
-          background-position: 100% 100%;
-        }
-      }
-
-      .card-base > * {
-        position: relative;
-        z-index: 1;
-      }
-
+      /* ONLY 2px border glow on hover - NO background changes */
       .card-base:hover {
-        transform: translateY(-6px) scale(1.01);
         border-color: #4edfd8;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        box-shadow:
+          0 0 20px rgba(78, 223, 216, 0.08),
+          0 8px 32px rgba(0, 0, 0, 0.5);
+        transform: translateY(-4px);
       }
 
-      /* ===== CARD IMAGE ===== */
       .card-base .card-image {
         width: 100%;
         height: 200px;
@@ -841,11 +582,10 @@
       }
 
       .card-base:hover .card-image img {
-        transform: scale(1.06);
+        transform: scale(1.05);
         filter: grayscale(0) brightness(1.05);
       }
 
-      /* ===== BADGE ===== */
       .card-base .card-badge {
         position: absolute;
         top: 12px;
@@ -965,56 +705,30 @@
       }
 
       /* ============================================================ */
-      /* ===== CATEGORY CARDS (3D effect) ===== */
+      /* ===== CATEGORY CARDS - 3D + 2px border glow ===== */
       /* ============================================================ */
       .cat-card {
         background: #0a111b;
         border-radius: var(--radius);
         padding: 32px 20px;
         text-align: center;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         transition: all var(--transition);
         cursor: pointer;
         position: relative;
-        overflow: hidden;
         transform-style: preserve-3d;
         perspective: 800px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        /* No background glow */
+        /* NO background glow */
       }
 
-      .cat-card::before {
-        content: "";
-        position: absolute;
-        inset: -2px;
-        border-radius: var(--radius);
-        background: linear-gradient(
-          135deg,
-          transparent 30%,
-          #4edfd8,
-          transparent 70%
-        );
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        z-index: 0;
-        pointer-events: none;
-        background-size: 200% 200%;
-      }
-
-      .cat-card:hover::before {
-        opacity: 1;
-        animation: border-glow 1.2s ease-in-out infinite alternate;
-      }
-
-      .cat-card > * {
-        position: relative;
-        z-index: 1;
-      }
-
+      /* ONLY 2px border glow on hover - NO background changes */
       .cat-card:hover {
-        transform: translateY(-8px) scale(1.03) rotateX(2deg);
         border-color: #4edfd8;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        box-shadow:
+          0 0 20px rgba(78, 223, 216, 0.08),
+          0 8px 32px rgba(0, 0, 0, 0.5);
+        transform: translateY(-6px) scale(1.02) rotateX(2deg);
       }
 
       .cat-card .cat-icon {
@@ -1063,14 +777,16 @@
         border-radius: var(--radius);
         padding: 28px 20px;
         text-align: center;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         transition: all var(--transition);
       }
 
       .promise-item:hover {
         border-color: #4edfd8;
-        transform: translateY(-4px) scale(1.02);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        box-shadow:
+          0 0 20px rgba(78, 223, 216, 0.08),
+          0 8px 32px rgba(0, 0, 0, 0.4);
+        transform: translateY(-4px);
       }
 
       .promise-item .icon {
@@ -1102,7 +818,7 @@
         background: #0a111b;
         border-radius: var(--radius);
         padding: 48px;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 1px solid rgba(78, 223, 216, 0.06);
         position: relative;
         overflow: hidden;
       }
@@ -1143,7 +859,7 @@
         padding: 12px 20px;
         border-radius: 12px;
         text-align: center;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 1px solid rgba(78, 223, 216, 0.06);
         min-width: 72px;
       }
 
@@ -1168,11 +884,10 @@
         background: linear-gradient(135deg, #0a111b, #0a151d);
         border-radius: var(--radius);
         padding: 48px;
-        border: 1px solid #4edfd8;
+        border: 2px solid #4edfd8;
         text-align: center;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 0 60px rgba(78, 223, 216, 0.04);
       }
 
       .offer-card h2 {
@@ -1210,14 +925,16 @@
         background: #0a111b;
         border-radius: var(--radius);
         overflow: hidden;
-        border: 1px solid rgba(78, 223, 216, 0.08);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         transition: all var(--transition);
       }
 
       .fav-item:hover {
         border-color: #4edfd8;
-        transform: translateY(-6px) scale(1.02);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        box-shadow:
+          0 0 20px rgba(78, 223, 216, 0.08),
+          0 8px 32px rgba(0, 0, 0, 0.4);
+        transform: translateY(-4px);
       }
 
       .fav-item .fav-img {
@@ -1237,7 +954,7 @@
       }
 
       .fav-item:hover .fav-img img {
-        transform: scale(1.06);
+        transform: scale(1.05);
         filter: grayscale(0) brightness(1.05);
       }
 
@@ -1267,7 +984,7 @@
       }
 
       /* ============================================================ */
-      /* ===== MISSIONARY CARDS (Community Says - Glassmorphism) ===== */
+      /* ===== COMMUNITY - Glassmorphism + 2px border glow ===== */
       /* ============================================================ */
       .community-grid {
         display: grid;
@@ -1281,45 +998,17 @@
         -webkit-backdrop-filter: blur(16px);
         border-radius: var(--radius);
         padding: 32px 24px;
-        border: 1px solid rgba(78, 223, 216, 0.06);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         transition: all var(--transition);
         text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .community-card::before {
-        content: "";
-        position: absolute;
-        inset: -2px;
-        border-radius: var(--radius);
-        background: linear-gradient(
-          135deg,
-          transparent 30%,
-          #4edfd8,
-          transparent 70%
-        );
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        z-index: 0;
-        pointer-events: none;
-        background-size: 200% 200%;
-      }
-
-      .community-card:hover::before {
-        opacity: 1;
-        animation: border-glow 1.2s ease-in-out infinite alternate;
-      }
-
-      .community-card > * {
-        position: relative;
-        z-index: 1;
       }
 
       .community-card:hover {
-        transform: translateY(-8px) scale(1.02);
         border-color: #4edfd8;
-        box-shadow: 0 12px 48px rgba(78, 223, 216, 0.06);
+        box-shadow:
+          0 0 20px rgba(78, 223, 216, 0.08),
+          0 12px 48px rgba(0, 0, 0, 0.4);
+        transform: translateY(-6px);
       }
 
       .community-card .icon {
@@ -1375,7 +1064,7 @@
       .marquee-track .mini-card {
         flex: 0 0 auto;
         background: #0a151d;
-        border: 1px solid rgba(78, 223, 216, 0.06);
+        border: 2px solid rgba(78, 223, 216, 0.06);
         border-radius: 12px;
         padding: 12px 28px;
         text-align: center;
@@ -1389,8 +1078,9 @@
 
       .marquee-track .mini-card:hover {
         border-color: #4edfd8;
+        box-shadow: 0 0 20px rgba(78, 223, 216, 0.08);
         color: #fff;
-        transform: scale(1.04) rotate(-1deg);
+        transform: scale(1.03);
       }
 
       @keyframes marquee-scroll {
@@ -1407,7 +1097,7 @@
       /* ============================================================ */
       .ad-box {
         background: #0a111b;
-        border: 1px dashed rgba(78, 223, 216, 0.12);
+        border: 2px dashed rgba(78, 223, 216, 0.12);
         border-radius: var(--radius);
         padding: 32px;
         text-align: center;
@@ -1451,7 +1141,7 @@
       }
 
       /* ============================================================ */
-      /* ===== MISSIONARY SECTION ===== */
+      /* ===== MISSIONARY ===== */
       /* ============================================================ */
       .missionary-section {
         background: #0a111b;
@@ -1460,7 +1150,7 @@
         display: flex;
         align-items: center;
         gap: 48px;
-        border: 1px solid rgba(78, 223, 216, 0.06);
+        border: 2px solid rgba(78, 223, 216, 0.06);
       }
 
       .missionary-section .text {
@@ -1485,7 +1175,7 @@
         overflow: hidden;
         min-height: 260px;
         background: #0a151d;
-        border: 1px solid rgba(78, 223, 216, 0.06);
+        border: 2px solid rgba(78, 223, 216, 0.06);
       }
 
       .missionary-section .image img {
@@ -1504,7 +1194,7 @@
       }
 
       /* ============================================================ */
-      /* ===== SOCIAL ICONS WITH TOOLTIPS ===== */
+      /* ===== SOCIAL ICONS ===== */
       /* ============================================================ */
       .social-links {
         display: flex;
@@ -1518,7 +1208,7 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        border: 1px solid rgba(78, 223, 216, 0.12);
+        border: 2px solid rgba(78, 223, 216, 0.12);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1536,15 +1226,14 @@
       .social-link:hover {
         border-color: #4edfd8;
         color: #4edfd8;
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 6px 24px rgba(78, 223, 216, 0.08);
+        box-shadow: 0 0 20px rgba(78, 223, 216, 0.08);
+        transform: translateY(-4px);
       }
 
       .social-link:hover i {
         transform: scale(1.15) rotate(-4deg);
       }
 
-      /* Tooltip */
       .social-link::after {
         content: attr(data-tooltip);
         position: absolute;
@@ -1703,8 +1392,6 @@
       /* ===== RESPONSIVE ===== */
       /* ============================================================ */
 
-      /* --- Desktop: 4 columns (default) --- */
-      /* --- Tablet: 3 columns --- */
       @media (max-width: 1024px) {
         .card-grid {
           grid-template-columns: repeat(3, 1fr);
@@ -1738,7 +1425,6 @@
         }
       }
 
-      /* --- Mobile: 2 columns --- */
       @media (max-width: 768px) {
         .nav-links {
           display: none;
@@ -1816,7 +1502,6 @@
         }
       }
 
-      /* --- Small Mobile: 1 column --- */
       @media (max-width: 480px) {
         .container {
           padding: 0 16px;
@@ -1881,9 +1566,7 @@
     </style>
   </head>
   <body>
-    <!-- ============================================================ -->
     <!-- ===== PRELOADER ===== -->
-    <!-- ============================================================ -->
     <div id="preloader">
       <div class="loader-logo">
         <img
@@ -1905,9 +1588,7 @@
       </div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- ===== OFF CANVAS ===== -->
-    <!-- ============================================================ -->
     <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
 
     <div class="offcanvas" id="offcanvas">
@@ -1921,9 +1602,7 @@
       <a href="#contact">GET IN TOUCH</a>
     </div>
 
-    <!-- ============================================================ -->
     <!-- ===== HEADER ===== -->
-    <!-- ============================================================ -->
     <header class="header" id="header">
       <div class="container header-inner">
         <div class="header-logo">
@@ -1953,16 +1632,12 @@
       </div>
     </header>
 
-    <!-- ============================================================ -->
     <!-- ===== BACK TO TOP ===== -->
-    <!-- ============================================================ -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
       ↑
     </button>
 
-    <!-- ============================================================ -->
     <!-- ===== HERO ===== -->
-    <!-- ============================================================ -->
     <section
       id="hero"
       style="
@@ -2017,9 +1692,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== CATEGORIES ===== -->
-    <!-- ============================================================ -->
     <section id="categories">
       <div class="container">
         <h2 class="section-title">
@@ -2037,9 +1710,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== FEATURED REVIEWS ===== -->
-    <!-- ============================================================ -->
     <section id="reviews">
       <div class="container">
         <h2 class="section-title">
@@ -2056,9 +1727,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== DEALS ===== -->
-    <!-- ============================================================ -->
     <section id="deals">
       <div class="container">
         <div class="deals-section">
@@ -2093,9 +1762,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== BESTSELLERS ===== -->
-    <!-- ============================================================ -->
     <section id="shop">
       <div class="container">
         <h2 class="section-title">
@@ -2113,9 +1780,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== OUR PROMISE ===== -->
-    <!-- ============================================================ -->
     <section id="promise" style="padding: 60px 0">
       <div class="container">
         <h2 class="section-title">
@@ -2139,9 +1804,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== SPECIAL OFFER ===== -->
-    <!-- ============================================================ -->
     <section id="offer">
       <div class="container">
         <div class="offer-card">
@@ -2160,9 +1823,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== AD BOX ===== -->
-    <!-- ============================================================ -->
     <div class="container">
       <div class="ad-box">
         <span class="ad-label">— Adsterra Ad —</span>
@@ -2173,9 +1834,7 @@
       </div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- ===== BY DIET ===== -->
-    <!-- ============================================================ -->
     <section id="diet">
       <div class="container">
         <h2 class="section-title">
@@ -2197,9 +1856,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== GENERAL REVIEWS ===== -->
-    <!-- ============================================================ -->
     <section>
       <div class="container">
         <h2 class="section-title">
@@ -2216,9 +1873,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== CATEGORY-BASED REVIEWS ===== -->
-    <!-- ============================================================ -->
     <section id="category-reviews">
       <div class="container">
         <!-- Weight Loss -->
@@ -2301,9 +1956,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== READER FAVORITES ===== -->
-    <!-- ============================================================ -->
     <section id="favorites">
       <div class="container">
         <h2 class="section-title">
@@ -2320,9 +1973,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== 15-MIN ROUNDUP ===== -->
-    <!-- ============================================================ -->
     <section style="padding: 40px 0 80px">
       <div class="container">
         <div
@@ -2412,9 +2063,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
-    <!-- ===== COMMUNITY SAYS (Glassmorphism - No Slider) ===== -->
-    <!-- ============================================================ -->
+    <!-- ===== COMMUNITY (Glassmorphism) ===== -->
     <section id="community">
       <div class="container">
         <h2 class="section-title">
@@ -2432,9 +2081,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== TWO COLUMN ADS ===== -->
-    <!-- ============================================================ -->
     <section id="ads">
       <div class="container">
         <h2 class="section-title">
@@ -2542,9 +2189,7 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== MISSIONARY ===== -->
-    <!-- ============================================================ -->
     <section id="contact">
       <div class="container">
         <div class="missionary-section">
@@ -2579,18 +2224,14 @@
       </div>
     </section>
 
-    <!-- ============================================================ -->
     <!-- ===== MARQUEE ===== -->
-    <!-- ============================================================ -->
     <div class="marquee-section" id="marquee">
       <div class="marquee-track" id="marqueeTrack">
         <!-- Injected by JS -->
       </div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- ===== FOOTER ===== -->
-    <!-- ============================================================ -->
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-grid">
@@ -2683,10 +2324,8 @@
       // ===== GSAP REGISTER =====
       gsap.registerPlugin(ScrollTrigger);
 
-      // ===== DYNAMIC YEAR =====
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      // ===== PRELOADER =====
       window.addEventListener("load", () => {
         document.getElementById("preloader").classList.add("hide");
         initAnimations();
@@ -2694,10 +2333,7 @@
         setup3DCards();
       });
 
-      // ============================================================
       // ===== DATA =====
-      // ============================================================
-
       const badgeColors = [
         "badge-gold",
         "badge-rose",
@@ -2713,7 +2349,6 @@
         return badgeColors[Math.floor(Math.random() * badgeColors.length)];
       }
 
-      // Categories
       const categories = [
         {
           icon: "🧠",
@@ -2733,7 +2368,6 @@
         { icon: "🌿", title: "Natural Remedies", desc: "Herbal & holistic" },
       ];
 
-      // Featured Reviews
       const featuredReviews = [
         {
           title: "Best Sleep Supplements 2026",
@@ -2765,7 +2399,6 @@
         },
       ];
 
-      // Bestsellers
       const bestsellers = [
         {
           title: "Pure Sleep Pro",
@@ -2801,7 +2434,6 @@
         },
       ];
 
-      // Promises
       const promises = [
         {
           icon: "🚚",
@@ -2825,7 +2457,6 @@
         },
       ];
 
-      // Diets
       const diets = [
         {
           icon: "🌱",
@@ -2841,7 +2472,6 @@
         { icon: "🍗", title: "High Protein", desc: "Fuel your fitness goals" },
       ];
 
-      // Reviews
       const reviews = [
         {
           title: "Vegan Chickpea Chili",
@@ -2887,7 +2517,6 @@
         },
       ];
 
-      // Category-based Reviews
       const weightLossReviews = [
         {
           title: "Keto Diet: 30-Day Results",
@@ -2984,7 +2613,6 @@
         },
       ];
 
-      // Favorites
       const favorites = [
         {
           title: "Honey Whipped Ricotta Toast",
@@ -3012,12 +2640,11 @@
         },
       ];
 
-      // Community (Glassmorphism)
       const communityData = [
         {
           icon: "🌟",
           title: "A Life-Changing Resource",
-          desc: "Pure Pulse has completely transformed my approach to health. I feel more in control than ever before.",
+          desc: "Pure Pulse has completely transformed my approach to health. I feel more in control.",
           author: "– Sarah J.",
         },
         {
@@ -3040,7 +2667,6 @@
         },
       ];
 
-      // Marquee
       const marqueeData = [
         "🧠 Mental Health",
         "😴 Sleep",
@@ -3060,10 +2686,7 @@
         "🌾 Gluten-Free",
       ];
 
-      // ============================================================
-      // ===== RENDER FUNCTIONS =====
-      // ============================================================
-
+      // ===== RENDER =====
       function renderCategoryGrid() {
         const grid = document.getElementById("categoryGrid");
         grid.innerHTML = categories
@@ -3311,7 +2934,6 @@
         track.innerHTML = items + items;
       }
 
-      // ===== INIT RENDER =====
       renderCategoryGrid();
       renderFeatured();
       renderBestsellers();
@@ -3323,9 +2945,7 @@
       renderCommunity();
       renderMarquee();
 
-      // ============================================================
-      // ===== COUNTDOWN TIMER =====
-      // ============================================================
+      // ===== TIMER =====
       function startTimer() {
         let targetDate = new Date();
         targetDate.setDate(targetDate.getDate() + 14);
@@ -3370,21 +2990,14 @@
         setInterval(updateTimer, 1000);
       }
 
-      // ============================================================
       // ===== 3D CATEGORY CARDS =====
-      // ============================================================
       function setup3DCards() {
         document.querySelectorAll(".cat-card").forEach((card) => {
           card.addEventListener("mousemove", (e) => {
             const rect = card.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty("--mouse-x", x + "%");
-            card.style.setProperty("--mouse-y", y + "%");
-
             const rotateX = ((e.clientY - rect.top) / rect.height - 0.5) * 6;
             const rotateY = ((e.clientX - rect.left) / rect.width - 0.5) * -6;
-            card.style.transform = `translateY(-8px) scale(1.03) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            card.style.transform = `translateY(-6px) scale(1.02) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
           });
 
           card.addEventListener("mouseleave", () => {
@@ -3394,11 +3007,8 @@
         });
       }
 
-      // ============================================================
       // ===== GSAP ANIMATIONS =====
-      // ============================================================
       function initAnimations() {
-        // Card-base
         document.querySelectorAll(".card-base").forEach((el, i) => {
           gsap.fromTo(
             el,
@@ -3423,7 +3033,6 @@
           );
         });
 
-        // Cat-card
         document.querySelectorAll(".cat-card").forEach((el, i) => {
           gsap.from(el, {
             opacity: 0,
@@ -3440,7 +3049,6 @@
           });
         });
 
-        // Promise items
         document.querySelectorAll(".promise-item").forEach((el, i) => {
           gsap.from(el, {
             opacity: 0,
@@ -3456,7 +3064,6 @@
           });
         });
 
-        // Favorites
         document.querySelectorAll(".fav-item").forEach((el, i) => {
           gsap.from(el, {
             opacity: 0,
@@ -3472,7 +3079,6 @@
           });
         });
 
-        // Community cards
         document.querySelectorAll(".community-card").forEach((el, i) => {
           gsap.from(el, {
             opacity: 0,
@@ -3489,7 +3095,6 @@
           });
         });
 
-        // Section titles
         document.querySelectorAll(".section-title").forEach((title) => {
           gsap.from(title, {
             opacity: 0,
@@ -3504,7 +3109,6 @@
           });
         });
 
-        // Underlines
         document.querySelectorAll(".title-underline").forEach((ul) => {
           gsap.from(ul, {
             width: 0,
@@ -3518,7 +3122,6 @@
           });
         });
 
-        // Missionary
         gsap.from(".missionary-section .text", {
           opacity: 0,
           x: -40,
@@ -3530,6 +3133,7 @@
           },
           ease: "power3.out",
         });
+
         gsap.from(".missionary-section .image", {
           opacity: 0,
           x: 40,
@@ -3542,7 +3146,6 @@
           ease: "power3.out",
         });
 
-        // Two column
         gsap.utils.toArray(".two-col .col").forEach((col, i) => {
           gsap.from(col, {
             opacity: 0,
@@ -3558,7 +3161,6 @@
           });
         });
 
-        // Marquee
         gsap.from(".marquee-track .mini-card", {
           opacity: 0,
           scale: 0.9,
@@ -3572,7 +3174,6 @@
           ease: "power2.out",
         });
 
-        // Deals
         gsap.from(".deals-section", {
           opacity: 0,
           scale: 0.97,
@@ -3585,7 +3186,6 @@
           ease: "power3.out",
         });
 
-        // Offer
         gsap.from(".offer-card", {
           opacity: 0,
           scale: 0.95,
@@ -3599,9 +3199,7 @@
         });
       }
 
-      // ============================================================
       // ===== HEADER SCROLL =====
-      // ============================================================
       let lastScrollY = 0;
       const header = document.getElementById("header");
       const backToTop = document.getElementById("backToTop");
@@ -3632,9 +3230,7 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
-      // ============================================================
-      // ===== HAMBURGER / OFFCANVAS =====
-      // ============================================================
+      // ===== HAMBURGER =====
       const hamburger = document.getElementById("hamburger");
       const offcanvas = document.getElementById("offcanvas");
       const overlay = document.getElementById("offcanvasOverlay");
@@ -3659,16 +3255,10 @@
         });
       });
 
-      console.log("✅ Pure Pulse — Fully Updated Landing Page Loaded!");
-      console.log("📌 4/3/2/1 Responsive Card Grid");
-      console.log("📌 3D effect ONLY on Category Cards");
-      console.log("📌 Border glows on hover (no background glow)");
-      console.log("📌 Glassmorphism Community Cards (No Slider)");
-      console.log(
-        "📌 Social: Pinterest, Quora, Tumblr, Substack, Facebook, Medium",
-      );
-      console.log("📌 Dynamic copyright year");
-      console.log("📌 SEO Meta Tags Added");
+      console.log("✅ Pure Pulse — Final Version Loaded!");
+      console.log("📌 NO background glow on hover");
+      console.log("📌 ONLY 2px border glow on hover");
+      console.log("📌 Clean, simple, and fast.");
     </script>
   </body>
 </html>
